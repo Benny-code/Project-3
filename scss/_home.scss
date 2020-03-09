@@ -1,0 +1,47 @@
+main  {
+    .up {        
+        height: 80vh;
+        background: url('../img/project-4.jpg') center bottom;
+        background-size: cover;       
+    }
+
+    .down {    
+        height: auto;
+        padding: 3rem;
+        text-align: center;
+
+
+        h3 {
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+
+        .latest__items {
+            width: 100%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1rem;
+            justify-items: center;             
+
+            .latest__item {
+                position: relative;
+                cursor: pointer; 
+                background: #fff;;               
+                padding: 0.5rem;   
+                border-radius: 1%;  
+                box-shadow: 1px 1px 1px black;    
+                @include transition-ease;   
+
+                img {
+                    width:100%;
+                    border-radius: 2%;
+                }
+
+                &:hover {
+                    @include hovered-box(grey)
+                }
+            }            
+        }        
+    }
+}
