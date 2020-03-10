@@ -4,36 +4,30 @@
 
 
 * {
-    box-sizing: border-box;  
-    /* border: 0.5px solid red; Temporary for checking layouts*/
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: $primary-color;
-    background: rgba($color: grey, $alpha: 0.3);
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box; 
+   /*  border: 0.5px solid red; Temporary for checking layouts*/
 }
 
 a {
     text-decoration: none;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: $primary-color;
+    background: rgba($color: grey, $alpha: 0.3);
+    margin: 0;
+    padding: 0;
+    background: white;    
+}
+
 header {
     height: 92px;
-    width: 100%;
     background: $primary-color;
 }
 
-main {
-    min-height: 100%;
-}
-
 footer {
-    position: fixed;
-    bottom: 0;
-    height: 70px;
-    width: 100%;
 }
 

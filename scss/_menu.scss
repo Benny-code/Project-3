@@ -1,12 +1,13 @@
 .menu {   
-
     .menu__logo {
         float: left;
-        padding: 0.5rem 3rem;        
-        
+        margin: 1rem 3rem;
+        width: 60px;
+        height: 60px;           
+
         img {
-            width: 70px;
-            height: 70px;
+            width: 100%;
+            height: 100%;
             border: 2px solid white;
             border-radius: 50%;
 
@@ -16,72 +17,93 @@
         }
     }
 
+    .menu__wrapper {
+        display: block;
+        text-align: right;
+
+        .menu__items {
+            display: inline-block;
+            list-style-type: none;
+            margin: 1.5rem;  
+            overflow: hidden;
+            text-align: center;
     
-    .menu__items {
-        list-style-type: none;
-        padding: 0;
-        padding-left: 40vw;
-        margin: 0;
-        line-height: 92px;
+            .menu__item {
+                float: left;                                        
+    
+                a {
+                    display: block;
+                    font-size: 1rem;
+                    color: white;            
+                    text-align: center;
+                    padding: 8px;
+    
+                    &:hover {
+                        @include hovered-item 
+                    }
+                }
+            }
+        }
+        
+        .menu__icons {
+            display: inline-block;
+            float: right;
+            margin: 1.8rem;
+            padding-right: 1rem;
+            
+            a {
+                color: set-text-color($primary-color);
+                padding: 0 0.25rem;
+                font-size: 1rem;
+    
+                &:hover {
+                    @include hovered-item 
+                }
+            }        
+        }    
+    }    
+}
+a {
+    text-align: center;
+}
+footer {
+    background: white;   
+
+    span.button {
+        display: block;
+        text-align: center;
+
+        a {            
+            img:hover {
+                color: $secondary-color;
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .wrapper__footer {
+        color: set-text-color(white);    
+        padding: 1rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background: #F4F1EF;
 
         .menu__item {
-            float: left;      
+            display: inline-block;
+            list-style-type: none;
 
             a {
                 display: inline-block;
                 font-size: 1rem;
-                color: white;
-                padding: 0 0.5rem;
-                text-align: center;
+                color: set-text-color(white);
+                padding: 0 1rem;
 
                 &:hover {
                     @include hovered-item 
                 }
             }
-        }
+        }    
     }
-
-    .menu__icons {
-        display: inline-block;
-        padding-left: 2rem;
-        padding-right: 2%;   
-        line-height: 92px;  
-
-        a {
-            color: set-text-color($primary-color);
-            padding: 0 0.25rem;
-            font-size: 1rem;
-
-            &:hover {
-                @include hovered-item 
-            }
-        }        
-    }    
-}
-
-footer {
-    font-weight: 500;
-    color: set-text-color(white);
-    background: white;
-    padding: 0 1rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-
-    .menu__item {
-        float: left;
-        list-style-type: none;
-
-        a {
-            display: inline-block;
-            font-size: 1rem;
-            color: set-text-color(white);
-            padding: 0 0.5rem;
-
-            &:hover {
-                @include hovered-item 
-            }
-        }
-    }    
 }
