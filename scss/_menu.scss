@@ -1,4 +1,10 @@
-.menu {   
+header { 
+    position: absolute;  
+    width: 100%;
+    animation: slide-down 0.8s 0.3s ease;
+    opacity: 0.8;
+    z-index: 1000;
+
     .menu__logo {
         float: left;
         margin: 1rem 3rem;
@@ -24,7 +30,7 @@
         .menu__items {
             display: inline-block;
             list-style-type: none;
-            margin: 1.5rem;  
+            margin: 1rem;  
             overflow: hidden;
             text-align: center;
     
@@ -33,28 +39,31 @@
     
                 a {
                     display: block;
-                    font-size: 1rem;
+                    font-size: 1.3rem;
                     color: white;            
                     text-align: center;
-                    padding: 8px;
+                    padding: 0.7rem;
     
-                    &:hover {
+                    &:hover:not(.active) {
                         @include hovered-item 
-                    }
+                    }                   
+                }
+
+                .active {
+                    @include hovered-item;
                 }
             }
         }
         
         .menu__icons {
-            display: inline-block;
             float: right;
-            margin: 1.8rem;
+            margin: 2rem;
             padding-right: 1rem;
             
             a {
                 color: set-text-color($primary-color);
                 padding: 0 0.25rem;
-                font-size: 1rem;
+                font-size: 0.8rem;
     
                 &:hover {
                     @include hovered-item 
@@ -67,16 +76,22 @@ a {
     text-align: center;
 }
 footer {
-    background: white;   
+    background: white;  
 
     span.button {
         display: block;
-        text-align: center;
+        text-align: center; 
+                    
 
         a {            
-            img:hover {
-                color: $secondary-color;
-                transform: scale(1.1);
+            img {
+                position: relative;
+                animation: totop-btn 0.2s 1s 4; 
+
+                &:hover {
+                    color: $secondary-color;
+                    transform: scale(1.1);
+                }
             }
         }
     }

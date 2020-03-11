@@ -1,64 +1,165 @@
-.menu .menu__logo {
+@-webkit-keyframes slide-down {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slide-down {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes totop-btn {
+  from {
+    -webkit-transform: rotate(-20deg) scale(1.2);
+            transform: rotate(-20deg) scale(1.2);
+  }
+  to {
+    -webkit-transform: rotate(20deg) scale(1.2);
+            transform: rotate(20deg) scale(1.2);
+  }
+}
+
+@keyframes totop-btn {
+  from {
+    -webkit-transform: rotate(-20deg) scale(1.2);
+            transform: rotate(-20deg) scale(1.2);
+  }
+  to {
+    -webkit-transform: rotate(20deg) scale(1.2);
+            transform: rotate(20deg) scale(1.2);
+  }
+}
+
+@-webkit-keyframes slide-in-left {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slide-in-right {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  -webkit-animation: slide-down 0.8s 0.3s ease;
+          animation: slide-down 0.8s 0.3s ease;
+  opacity: 0.8;
+  z-index: 1000;
+}
+
+header .menu__logo {
   float: left;
   margin: 1rem 3rem;
   width: 60px;
   height: 60px;
 }
 
-.menu .menu__logo img {
+header .menu__logo img {
   width: 100%;
   height: 100%;
   border: 2px solid white;
   border-radius: 50%;
 }
 
-.menu .menu__logo img:hover {
+header .menu__logo img:hover {
   border: 2px solid #ff652f;
 }
 
-.menu .menu__wrapper {
+header .menu__wrapper {
   display: block;
   text-align: right;
 }
 
-.menu .menu__wrapper .menu__items {
+header .menu__wrapper .menu__items {
   display: inline-block;
   list-style-type: none;
-  margin: 1.5rem;
+  margin: 1rem;
   overflow: hidden;
   text-align: center;
 }
 
-.menu .menu__wrapper .menu__items .menu__item {
+header .menu__wrapper .menu__items .menu__item {
   float: left;
 }
 
-.menu .menu__wrapper .menu__items .menu__item a {
+header .menu__wrapper .menu__items .menu__item a {
   display: block;
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: white;
   text-align: center;
-  padding: 8px;
+  padding: 0.7rem;
 }
 
-.menu .menu__wrapper .menu__items .menu__item a:hover {
+header .menu__wrapper .menu__items .menu__item a:hover:not(.active) {
   opacity: 0.5;
 }
 
-.menu .menu__wrapper .menu__icons {
+header .menu__wrapper .menu__items .menu__item .active {
+  opacity: 0.5;
+}
+
+header .menu__wrapper .menu__icons {
   display: inline-block;
   float: right;
-  margin: 1.8rem;
+  margin: 2rem;
   padding-right: 1rem;
 }
 
-.menu .menu__wrapper .menu__icons a {
+header .menu__wrapper .menu__icons a {
   color: #fff;
   padding: 0 0.25rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
-.menu .menu__wrapper .menu__icons a:hover {
+header .menu__wrapper .menu__icons a:hover {
   opacity: 0.5;
 }
 
@@ -73,6 +174,12 @@ footer {
 footer span.button {
   display: block;
   text-align: center;
+}
+
+footer span.button a img {
+  position: relative;
+  -webkit-animation: totop-btn 0.2s 1s 4;
+          animation: totop-btn 0.2s 1s 4;
 }
 
 footer span.button a img:hover {
@@ -116,17 +223,63 @@ footer .wrapper__footer .menu__item a:hover {
   opacity: 0.5;
 }
 
-main .up {
-  height: 80vh;
-  background: url("../img/project-4.jpg") center bottom;
-  background-size: cover;
+main {
+  overflow: hidden;
+}
+
+main .up .banner {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: auto;
+  margin-top: -10rem;
+}
+
+main .up .banner .banner-left {
+  -webkit-animation: slide-in-left 0.8s 0.3s ease;
+          animation: slide-in-left 0.8s 0.3s ease;
+}
+
+main .up .banner .banner-left h2 {
+  font-size: 4rem;
+  color: #000;
+  position: absolute;
+  top: 20rem;
+  left: 3rem;
+  text-shadow: 1px 1px 4px white;
+}
+
+main .up .banner .banner-right {
+  -webkit-animation: slide-in-right 0.8s 0.3s ease;
+          animation: slide-in-right 0.8s 0.3s ease;
+}
+
+main .up .banner .banner-right h2 {
+  font-size: 4rem;
+  color: #000;
+  position: absolute;
+  top: 20rem;
+  right: 3rem;
+  text-shadow: 2px 2px 8px white;
+}
+
+main .up .banner img {
+  max-width: 100%;
+}
+
+main .up .banner h2 {
+  font-size: 5rem;
+  color: #000;
+  position: absolute;
+  top: 20rem;
 }
 
 main .down {
   height: auto;
-  padding: 3rem;
-  padding-bottom: 8rem;
+  margin-top: 30rem;
+  padding: 10rem 2rem;
   text-align: center;
+  background: white;
 }
 
 main .down h3 {
@@ -153,8 +306,8 @@ main .down .latest__items .latest__item {
   background: #fff;
   padding: 0.5rem;
   border-radius: 1%;
-  -webkit-box-shadow: 1px 1px 1px black;
-          box-shadow: 1px 1px 1px black;
+  -webkit-box-shadow: 0px 0px 2px 0px black;
+          box-shadow: 0px 0px 2px 0px black;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -164,9 +317,25 @@ main .down .latest__items .latest__item img {
   border-radius: 2%;
 }
 
+main .down .latest__items .latest__item i {
+  position: absolute;
+  font-size: 1.5rem;
+  margin-left: 9px;
+  opacity: 0;
+  color: grey;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
 main .down .latest__items .latest__item:hover {
   -webkit-box-shadow: 0px 0px 5px 3px grey;
           box-shadow: 0px 0px 5px 3px grey;
+}
+
+main .down .latest__items .latest__item:hover i {
+  opacity: 0.7;
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
 }
 
 * {
@@ -192,7 +361,7 @@ body {
   background: rgba(128, 128, 128, 0.3);
   margin: 0;
   padding: 0;
-  background: white;
+  background: #F4F1EF;
 }
 
 header {
