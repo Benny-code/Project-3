@@ -9,7 +9,7 @@ main {
             margin-top: -10rem;
 
             .banner-left {
-                animation: slide-in-left 0.8s 0.3s ease;
+                animation: slide-in-left 1.5s ease-in-out;
 
                 h2 {
                     font-size: 4rem;
@@ -21,7 +21,7 @@ main {
                 }
             }
             .banner-right {
-                animation: slide-in-right 0.8s 0.3s ease;
+                animation: slide-in-right 1.5s ease-in-out;
 
                 h2 {
                     font-size: 4rem;

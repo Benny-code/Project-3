@@ -89,8 +89,8 @@
 header {
   position: absolute;
   width: 100%;
-  -webkit-animation: slide-down 0.8s 0.3s ease;
-          animation: slide-down 0.8s 0.3s ease;
+  -webkit-animation: slide-down 1.5s ease-in-out;
+          animation: slide-down 1.5s ease-in-out;
   opacity: 0.8;
   z-index: 1000;
 }
@@ -147,7 +147,6 @@ header .menu__wrapper .menu__items .menu__item .active {
 }
 
 header .menu__wrapper .menu__icons {
-  display: inline-block;
   float: right;
   margin: 2rem;
   padding-right: 1rem;
@@ -236,8 +235,8 @@ main .up .banner {
 }
 
 main .up .banner .banner-left {
-  -webkit-animation: slide-in-left 0.8s 0.3s ease;
-          animation: slide-in-left 0.8s 0.3s ease;
+  -webkit-animation: slide-in-left 1.5s ease-in-out;
+          animation: slide-in-left 1.5s ease-in-out;
 }
 
 main .up .banner .banner-left h2 {
@@ -250,8 +249,8 @@ main .up .banner .banner-left h2 {
 }
 
 main .up .banner .banner-right {
-  -webkit-animation: slide-in-right 0.8s 0.3s ease;
-          animation: slide-in-right 0.8s 0.3s ease;
+  -webkit-animation: slide-in-right 1.5s ease-in-out;
+          animation: slide-in-right 1.5s ease-in-out;
 }
 
 main .up .banner .banner-right h2 {
