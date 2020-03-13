@@ -1,46 +1,48 @@
-section {
+.article__up {
     overflow: hidden;
     
-    .up__banner {  
-        
-        .banner {
-            float: left;
-            width: 50%;           
-    
-            .banner-left {
-                animation: slide-in-left 1.5s ease-in-out;
-    
-                h2 {
-                    font-size: 4rem;
-                    color: $primary-color;
-                    position: absolute;
-                    top: 20rem;
-                    left: 3rem;
-                    text-shadow: 1px 1px 4px white; 
-                }
-            }
-            .banner-right {
-                animation: slide-in-right 1.5s ease-in-out;
-    
-                h2 {
-                    font-size: 4rem;
-                    color: $primary-color;
-                    position: absolute;
-                    top: 20rem;
-                    right: 3rem;
-                    text-shadow: 1px 1px 4px white;                     
-                }
-            }
-    
-            img {
-                max-width: 100%;
-                height: calc(100vh- 67px);
-            }
+    .banner__left {
+        float: left;
+        width: 50%; 
+        animation: slide-in-left 1.5s ease-in-out;
+
+        img {
+            max-width: 100%;
+        }
+
+        h2 {
+            font-size: 4rem;
+            color: $primary-color;
+            position: absolute;
+            top: 20rem;
+            left: 3rem;
+            text-shadow: 1px 1px 4px white; 
         }
     }
 
+    .banner__right {
+        float: left;
+        width: 50%;
+        animation: slide-in-right 1.5s ease-in-out;
+
+        img {
+            max-width: 100%;
+        }
+
+        h2 {
+            font-size: 4rem;
+            color: $primary-color;
+            position: absolute;
+            top: 20rem;
+            right: 3rem;
+            text-shadow: 1px 1px 4px white;                     
+        }
+    }
+}
+
+.article__down {
     .down__latest{    
-        padding: 10rem 2rem;
+        padding: 2rem 2rem 10rem;
         text-align: center;
         background: white;
 
@@ -86,7 +88,6 @@ section {
 
                     i {
                         opacity: 0.7;
-                        transform: translateX(10px);
                     }
                 }
             }            
