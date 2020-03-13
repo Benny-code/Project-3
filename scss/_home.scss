@@ -1,61 +1,50 @@
-main {
+section {
     overflow: hidden;
-    .up {  
+    
+    .up__banner {  
+        
         .banner {
-            position: relative;
             float: left;
-            width: 50%;
-            height: auto;
-            margin-top: -10rem;
-
+            width: 50%;           
+    
             .banner-left {
                 animation: slide-in-left 1.5s ease-in-out;
-
+    
                 h2 {
                     font-size: 4rem;
                     color: $primary-color;
                     position: absolute;
                     top: 20rem;
                     left: 3rem;
-                    text-shadow: 1px 1px 4px white;                    
+                    text-shadow: 1px 1px 4px white; 
                 }
             }
             .banner-right {
                 animation: slide-in-right 1.5s ease-in-out;
-
+    
                 h2 {
                     font-size: 4rem;
                     color: $primary-color;
                     position: absolute;
                     top: 20rem;
                     right: 3rem;
-                    text-shadow: 2px 2px 8px white; 
+                    text-shadow: 1px 1px 4px white;                     
                 }
             }
-
+    
             img {
                 max-width: 100%;
-            }
-
-            h2 {
-                font-size: 5rem;
-                color: $primary-color;
-                position: absolute;
-                top: 20rem;
+                height: calc(100vh- 67px);
             }
         }
-            
     }
 
-    .down {    
-        height: auto;
-        margin-top: 30rem;
+    .down__latest{    
         padding: 10rem 2rem;
         text-align: center;
-        background: white;    
+        background: white;
 
-
-        h3 {
+        h2 {
             font-size: 1rem;
             text-transform: uppercase;
         }
@@ -67,7 +56,6 @@ main {
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: auto;
             grid-gap: 1rem;
-            justify-items: center;             
 
             .latest__item {
                 position: relative;

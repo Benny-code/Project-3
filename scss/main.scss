@@ -1,31 +1,51 @@
 @import 'config';
-@import 'menu';
+@import 'template';
+@import 'responsive';
 @import 'home';
 
 
 * {
-    box-sizing: border-box; 
-   /*  border: 0.5px solid red; Temporary for checking layouts*/
-}
-
-a {
-    text-decoration: none;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: $primary-color;
-    background: rgba($color: grey, $alpha: 0.3);
-    margin: 0;
-    padding: 0;
-    background: #F4F1EF;
-    
+  font-family: Arial;
+  background: white;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    height: 92px;
-    background: $primary-color;
+  text-align: center;
+  background: #333;
+  padding: 5px 20px;
+  animation: slide-down 1s ease-out;
+  z-index: 1000;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
+main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: $footer-color;
+  padding: 20px;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@include mobile
