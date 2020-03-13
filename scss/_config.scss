@@ -1,0 +1,52 @@
+$primary-color: #272727;
+$secondary-color: #ff652f;
+$footer-color: #F9F8F7;
+
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+
+@mixin hovered-box($color) {
+    box-shadow: 0px 0px 5px 3px ($color);
+}
+
+@mixin hover-items {
+    &:hover {
+        color: $secondary-color;
+      }
+}
+
+@function set-text-color($color) {
+    @if (lightness($color) > 50% ) {
+        @return black;
+    } @else {
+        @return white;
+    }
+}
+
+@keyframes slide-down {
+    from {transform: translateY(-100%);}
+    to {transform: translateY(0);}
+}
+
+@keyframes totop-btn {
+    from {transform: rotate(-20deg) scale(1.2);}
+    to {transform: rotate(20deg) scale(1.2);}
+}
+
+@keyframes slide-in-left {
+    from {transform: translateX(-100%)}
+    to {transform: translateX(0)}
+}
+
+@keyframes slide-in-right {
+    from {transform: translateX(100%)}
+    to {transform: translateX(0)}
+}
+
+@keyframes opacity {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

@@ -1,0 +1,99 @@
+.article__up {
+    overflow: hidden;
+    
+    .banner__left {
+        float: left;
+        width: 50%; 
+        animation: slide-in-left 1.5s ease-in-out;
+
+        img {
+            max-width: 100%;
+        }
+
+        h2 {
+            font-size: 4rem;
+            color: $primary-color;
+            position: absolute;
+            top: 20rem;
+            left: 3rem;
+            text-shadow: 1px 1px 4px white; 
+        }
+    }
+
+    .banner__right {
+        float: left;
+        width: 50%;
+        animation: slide-in-right 1.5s ease-in-out;
+
+        img {
+            max-width: 100%;
+        }
+
+        h2 {
+            font-size: 4rem;
+            color: $primary-color;
+            position: absolute;
+            top: 20rem;
+            right: 3rem;
+            text-shadow: 1px 1px 4px white;                     
+        }
+    }
+}
+
+.article__down {
+    .down__latest{    
+        padding: 2rem 2rem 10rem;
+        text-align: center;
+        background: white;
+
+        h2 {
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+
+        .latest__items {
+            width: 100%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+            grid-gap: 1rem;
+
+            .latest__item {
+                position: relative;
+                cursor: pointer; 
+                background: #fff;;               
+                padding: 0.5rem; 
+                border-radius: 1%;  
+                box-shadow: 0px 0px 2px 0px black;    
+                @include transition-ease;   
+                
+
+                img {
+                    width:100%;
+                    border-radius: 2%;   
+                }
+
+                i {
+                    position: absolute;
+                    font-size: 1.5rem;
+                    margin-left: 9px;
+                    opacity: 0;
+                    color: grey;
+                    transition: all 0.3s linear;
+                }
+
+                &:hover {
+                    @include hovered-box(grey)
+
+                    i {
+                        opacity: 0.7;
+                    }
+                }
+            }            
+        }        
+    }
+}
+
+
+    

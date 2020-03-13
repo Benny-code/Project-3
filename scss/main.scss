@@ -1,0 +1,49 @@
+@import 'config';
+@import 'template';
+@import 'responsive';
+@import 'home';
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  background: white;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  background: #333;
+  padding: 20px 20px;
+  animation: slide-down 1s ease-out;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  text-align: center;
+  background: $footer-color;
+  padding: 15px;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@include mobile

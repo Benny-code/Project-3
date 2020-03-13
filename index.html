@@ -5,109 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="dist/css/main.css">
-    <title>Ben Park Web Portfolio</title>
+    <title>Ben Park Portfolio</title>
 </head>
 <body>
-    <header>
-        <a href="index.html" class="menu__logo">
-            <img src="img/logo.png" alt="logo">
-        </a>  
-        <div class="menu__wrapper">
-            <nav class="menu__nav">
-                <ul class="menu__items">
-                    <li class="menu__item">
-                        <a href="index.html" class="menu__link active">Home</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="about.html" class="menu__link">About Me</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="project.html" class="menu__link">My Projects</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="contact.html" class="menu__link">Contact Me</a>
-                    </li>                      
-                </ul>    
-                <div class="menu__icons">                    
-                    <a href="#" class="menu__icon"><i class="fab fa-facebook fa-2x"></i></a>
-                    <a href="#" class="menu__icon"><i class="fab fa-twitter fa-2x"></i></a>
-                    <a href="#" class="menu__icon"><i class="fab fa-instagram fa-2x"></i></a>
-                    <a href="#" class="menu__icon"><i class="fab fa-github fa-2x"></i></a>
-                    <a href="#" class="menu__icon"><i class="fab fa-youtube fa-2x"></i></a>       
-                </div>            
-            </nav>            
-        </div>            
-            
-    </header>
 
-    <main>
-        <section class="up">
-            <div class="up__banner">
-                <div class="banner">
-                    <div class="banner-left">
-                    <img src="img/banner-left.jpg" alt="banner--left">
-                    <h2>Designer</h2>
-                    </div>
-                </div>
-                <div class="banner">
-                    <div class="banner-right">
-                        <img src="img/banner-right.jpg" alt="banner--right">
-                        <h2>Coder</h2>
-                    </div>     
-                </div>          
-            </div>            
-        </section>
+<header>
+  <a href="index.html" class="menu__logo">
+    <img src="img/logo.png" alt="logo">
+  </a> 
+  <nav class="nav__menu top">
+    <a href="about.html">About Me</a>
+    <a href="feature.html">Featured</a>
+    <a href="projects.html">My Projects</a>  
+    <a href="contact.html">Contact Me</a>
+  </nav>
+  <div class="nav__icons">                    
+    <a href="#" class="nav__icon"><i class="fab fa-facebook fa-2x"></i></a>
+    <a href="#" class="nav__icon"><i class="fab fa-instagram fa-2x"></i></a>
+    <a href="#" class="nav__icon"><i class="fab fa-github fa-2x"></i></a>
+    <a href="#" class="nav__icon"><i class="fab fa-youtube fa-2x"></i></a>       
+  </div>
+</header>
 
-        <section class="down">
-            <div class="down__latest">
-                <h2>Some of My Lastest Works</h2>
-                <div class="latest__items">
-                    <a class="latest__item">
-                        <img src="img/project-2.jpg" alt="Segment builder design">
-                        Segment builder design<i class="fas fa-angle-double-right"></i>
-                    </a>
-                    <a class="latest__item">
-                        <img src="img/project-5.jpg" alt="Rethinking flight search">
-                        Rethinking flight search<i class="fas fa-angle-double-right"></i>
-                    </a>
-                    <a class="latest__item">
-                        <img src="img/project-1.jpg" alt="Rethinking flight search">
-                        Rethinking flight search<i class="fas fa-angle-double-right"></i>
-                    </a>
-                </div>
-            </div>           
-        </section>
-    </main>    
+<main>
+  <section>
+    <div class="article__up">
+      <div class="banner__left">
+        <img src="img/banner-left.jpg" alt="left banner">
+        <h2>Designer</h2>
+      </div>
+      <div class="banner__right">
+        <img src="img/banner-right.jpg" alt="right banner">
+        <h2>Coder</h2>
+      </div>     
+    </div>
     
-    <footer>
-        <span class="button">
-            <a href="#top"><img src="img/backtotop.png" alt="Back To Top"></a>
-        </span>
-        <div class="wrapper__footer">
-            <div class="footer__copy">&copy; 2020 Ben Park</div>
-            <nav class="footer__nav">
-                <ul class="menu__items">
-                    <li class="menu__item">
-                        <a href="index.html" class="menu__link">Home</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="about.html" class="menu__link">About Me</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="project.html" class="menu__link">My Projects</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="contact.html" class="menu__link">Contact Me</a>
-                    </li>
-                </ul>               
-            </nav>    
-            <div class="footer__follow">
-                <span>좋아요!</span>
-                <span>Facebook</span>
-            </div>
-        </div>          
-    </footer>
+    <div class="article__down">
+      <div class="down__latest">
+        <h2>Some of My Lastest Works</h2>
+        <div class="latest__items">
+            <a class="latest__item">
+                <img src="img/project-2.jpg" alt="Segment builder design">
+                Segment builder design<i class="fas fa-angle-double-right"></i>
+            </a>
+            <a class="latest__item">
+                <img src="img/project-5.jpg" alt="Rethinking flight search">
+                Rethinking flight search<i class="fas fa-angle-double-right"></i>
+            </a>
+            <a class="latest__item">
+                <img src="img/project-1.jpg" alt="Rethinking flight search">
+                Rethinking flight search<i class="fas fa-angle-double-right"></i>
+            </a>
+        </div>
+      </div>
+    </div>           
+  </section>  
+</main>
 
-    <script src="https://kit.fontawesome.com/6d2ea823d0.js"></script>
+<footer>
+  <span class="button">
+    <a href="#top"><img src="img/backtotop.png" alt="Back To Top"></a>
+  </span>
+  <div class="footer__copy">&copy; 2020 Ben Park</div>
+  <nav class="nav__menu footer">
+    <a href="about.html">About Me</a>
+    <a href="feature.html">Featured</a>
+    <a href="projects.html">My Projects</a>  
+    <a href="contact.html">Contact Me</a>
+  </nav>
+  <div class="footer__follow">
+      <span>좋아요!</span>
+      <span>Facebook</span>
+  </div>  
+</footer>
+
+<script src="https://kit.fontawesome.com/6d2ea823d0.js"></script>
 </body>
 </html>
