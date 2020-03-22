@@ -1,0 +1,45 @@
+.subheading {
+    @include subheading;
+    padding: 1rem;
+    background: $secondary-color;
+}
+
+
+.home {
+    overflow: hidden;
+    
+
+    .left__img {   
+        float: left;
+        width: 50%;
+    }
+
+      .right__img {
+        float: left;
+        width: 50%;
+    }
+    
+    img {
+        background-color: #aaa;
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+.about {
+    overflow: hidden;     
+
+    .left.column {   
+        float: left;
+        width: 50%;
+    }
+
+    .right.column {
+        float: left;
+        width: 50%;
+    }
+}
+
+.portfolio {
+    
+}
