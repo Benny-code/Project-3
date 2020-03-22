@@ -4,7 +4,7 @@
     .banner__left {
         float: left;
         width: 50%; 
-        animation: slide-in-left 1.5s ease-in-out;
+        animation: slide-in-left 1s ease-in-out;
 
         img {
             max-width: 100%;
@@ -14,7 +14,7 @@
             font-size: 4rem;
             color: $primary-color;
             position: absolute;
-            top: 20rem;
+            top: 10rem;
             left: 3rem;
             text-shadow: 1px 1px 4px white; 
         }
@@ -23,7 +23,7 @@
     .banner__right {
         float: left;
         width: 50%;
-        animation: slide-in-right 1.5s ease-in-out;
+        animation: slide-in-right 1s ease-in-out;
 
         img {
             max-width: 100%;
@@ -33,34 +33,9 @@
             font-size: 4rem;
             color: $primary-color;
             position: absolute;
-            top: 20rem;
+            top: 10rem;
             right: 3rem;
             text-shadow: 1px 1px 4px white;                     
         }
-    }
-}
-
-.article__down {
-    width: 60%;
-    padding-bottom: 100px;
-    margin: 0 auto;
-    margin-top: 50px;
-
-    h2 {
-        color: set-text-color($primary-color);
-        text-align: center;
-        background: $primary-color;
-        padding: 15px;    
-        margin: 0px;    
-        border-radius: 15px 0 0 0;
-    }
-
-    p {
-        color: set-text-color(pink);
-        text-align: space-around;
-        background: pink;
-        padding: 50px;          
-        margin: 0px;
-        border-radius: 0 0 15px 0;
     }
 }

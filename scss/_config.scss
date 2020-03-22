@@ -1,6 +1,5 @@
 $primary-color: #272727;
 $secondary-color: #ff652f;
-$footer-color: #F9F8F7;
 
 
 @mixin transition-ease {
@@ -49,4 +48,9 @@ $footer-color: #F9F8F7;
 @keyframes opacity {
     from {opacity: 0;}
     to {opacity: 1;}
+}
+
+@keyframes bar {
+    from {width: 150px;}
+    to {width: 90%; background: pink}
 }

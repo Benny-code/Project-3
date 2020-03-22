@@ -2,7 +2,7 @@
 @import 'template';
 @import 'responsive';
 @import 'home';
-@import 'portfolio';
+@import 'tabs';
 
 
 * {
@@ -33,17 +33,14 @@ main:after {
   content: "";
   display: table;
   clear: both;  
-
-  .contact {
-    padding: 30px;
-  }
 }
 
 
 footer {
   text-align: center;
-  background: $footer-color;
+  background: #333;
   padding: 18px;
+  margin-top: 50px;
 
   &:after {
     content: "";

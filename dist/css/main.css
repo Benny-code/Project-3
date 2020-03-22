@@ -104,6 +104,26 @@
   }
 }
 
+@-webkit-keyframes bar {
+  from {
+    width: 150px;
+  }
+  to {
+    width: 90%;
+    background: pink;
+  }
+}
+
+@keyframes bar {
+  from {
+    width: 150px;
+  }
+  to {
+    width: 90%;
+    background: pink;
+  }
+}
+
 .menu__logo {
   float: left;
   height: 50px;
@@ -193,11 +213,11 @@ footer .button a img:hover {
 footer .footer__copy {
   float: left;
   padding: 16px 3px;
-  color: black;
+  color: white;
 }
 
 footer .nav__menu.footer {
-  background-color: #F9F8F7;
+  background-color: #333;
   padding: 3px;
   text-align: center;
   margin-left: 200px;
@@ -207,7 +227,7 @@ footer .nav__menu.footer a {
   float: left;
   display: block;
   font-size: 1rem;
-  color: black;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -223,13 +243,13 @@ footer .nav__menu.footer .active {
 
 footer .footer__follow {
   float: right;
-  background-color: #F9F8F7;
+  background-color: #333;
   padding: 16px 3px;
 }
 
 footer .footer__follow span {
   font-size: 1rem;
-  color: black;
+  color: white;
   text-align: center;
   padding-left: 10px;
 }
@@ -245,8 +265,8 @@ footer .footer__follow span:hover {
 .article__up .banner__left {
   float: left;
   width: 50%;
-  -webkit-animation: slide-in-left 1.5s ease-in-out;
-          animation: slide-in-left 1.5s ease-in-out;
+  -webkit-animation: slide-in-left 1s ease-in-out;
+          animation: slide-in-left 1s ease-in-out;
 }
 
 .article__up .banner__left img {
@@ -257,7 +277,7 @@ footer .footer__follow span:hover {
   font-size: 4rem;
   color: #272727;
   position: absolute;
-  top: 20rem;
+  top: 10rem;
   left: 3rem;
   text-shadow: 1px 1px 4px white;
 }
@@ -265,8 +285,8 @@ footer .footer__follow span:hover {
 .article__up .banner__right {
   float: left;
   width: 50%;
-  -webkit-animation: slide-in-right 1.5s ease-in-out;
-          animation: slide-in-right 1.5s ease-in-out;
+  -webkit-animation: slide-in-right 1s ease-in-out;
+          animation: slide-in-right 1s ease-in-out;
 }
 
 .article__up .banner__right img {
@@ -277,34 +297,25 @@ footer .footer__follow span:hover {
   font-size: 4rem;
   color: #272727;
   position: absolute;
-  top: 20rem;
+  top: 10rem;
   right: 3rem;
   text-shadow: 1px 1px 4px white;
 }
 
-.article__down {
-  width: 60%;
-  padding-bottom: 100px;
-  margin: 0 auto;
-  margin-top: 50px;
+.about .skill .bar {
+  margin: 1rem 3rem;
+  background: grey;
 }
 
-.article__down h2 {
+.about .skill .bar div {
+  text-transform: uppercase;
+  font-weight: 700;
   color: white;
   text-align: center;
-  background: #272727;
-  padding: 15px;
-  margin: 0px;
-  border-radius: 15px 0 0 0;
-}
-
-.article__down p {
-  color: black;
-  text-align: space-around;
-  background: pink;
-  padding: 50px;
-  margin: 0px;
-  border-radius: 0 0 15px 0;
+  display: inline-block;
+  padding: 1rem;
+  width: 100px;
+  background: green;
 }
 
 .portfolio .latest {
@@ -369,16 +380,30 @@ footer .footer__follow span:hover {
 
 .contact {
   width: 60%;
-  padding-bottom: 100px;
-  margin: 0 auto;
-  margin-top: 50px;
-  -webkit-box-shadow: 0 0 10px 5px grey;
-          box-shadow: 0 0 10px 5px grey;
+  padding: 1rem;
+  margin: 50px auto 100px;
+  -webkit-box-shadow: 0 0 2px 2px grey;
+          box-shadow: 0 0 2px 2px grey;
 }
 
 .contact .address {
   -webkit-animation: slide-in-right 1s 0.2s ease-in-out;
           animation: slide-in-right 1s 0.2s ease-in-out;
+}
+
+.contact .mobile {
+  -webkit-animation: slide-in-right 1s 0.3s ease-in-out;
+          animation: slide-in-right 1s 0.3s ease-in-out;
+}
+
+.contact .email {
+  -webkit-animation: slide-in-right 1s 0.4s ease-in-out;
+          animation: slide-in-right 1s 0.4s ease-in-out;
+}
+
+.contact .website {
+  -webkit-animation: slide-in-right 1s 0.5s ease-in-out;
+          animation: slide-in-right 1s 0.5s ease-in-out;
 }
 
 .contact h2 {
@@ -388,6 +413,8 @@ footer .footer__follow span:hover {
   padding: 15px;
   margin: 0px;
   border-radius: 15px 0 0 0;
+  -webkit-animation: opacity 1s 0.5s ease-in-out;
+          animation: opacity 1s 0.5s ease-in-out;
 }
 
 .contact p {
@@ -431,14 +458,11 @@ main:after {
   clear: both;
 }
 
-main:after .contact {
-  padding: 30px;
-}
-
 footer {
   text-align: center;
-  background: #F9F8F7;
+  background: #333;
   padding: 18px;
+  margin-top: 50px;
 }
 
 footer:after {
