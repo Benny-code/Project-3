@@ -3,15 +3,30 @@ $secondary-color: #ff652f;
 $footer-color: #F9F8F7;
 
 
+@mixin subheading {
+    font-size: 20px;
+    font-weight: 100;
+    color: white;
+    text-transform: uppercase;
+    padding: 0.8rem;
+    padding-left: 1rem;
+    border-radius: 7px; 
+    background: #7EB037;
+    letter-spacing: 1.5px;    
+}
+
+<<<<<<< HEAD
+=======
 @mixin transition-ease {
     transition: all 0.5s ease-in-out;
 }
-
+>>>>>>> OCR
 
 @mixin hovered-box($color) {
     box-shadow: 0px 0px 5px 3px ($color);
 }
 
+<<<<<<< HEAD
 @mixin hover-items {
     &:hover {
         color: $secondary-color;
@@ -24,24 +39,33 @@ $footer-color: #F9F8F7;
     } @else {
         @return white;
     }
+=======
+@mixin progress-bar {
+    transition: all 1s ease-out;
+>>>>>>> OCR
 }
 
-@keyframes slide-down {
-    from {transform: translateY(-100%);}
-    to {transform: translateY(0);}
+@function set-text-color($color) {
+    @if (lightness($color) > 40% ) {
+        @return black;
+    } 
+    @else {
+        @return white;
+    }
 }
 
-@keyframes totop-btn {
-    from {transform: rotate(-20deg) scale(1.2);}
-    to {transform: rotate(20deg) scale(1.2);}
+@keyframes subheadings {
+    from {opacity: 0;}
+    to {opacity: 0.9}
 }
 
 @keyframes slide-in-left {
-    from {transform: translateX(-100%)}
-    to {transform: translateX(0)}
+    from {transform: translateX(-100%);}
+    to {transform: translateX(0);}
 }
 
 @keyframes slide-in-right {
+<<<<<<< HEAD
     from {transform: translateX(100%)}
     to {transform: translateX(0)}
 }
@@ -50,3 +74,8 @@ $footer-color: #F9F8F7;
     from {opacity: 0;}
     to {opacity: 1;}
 }
+=======
+    from {transform: translateX(110%);}
+    to {transform: translateX(0);}
+}
+>>>>>>> OCR
