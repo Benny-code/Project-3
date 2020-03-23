@@ -1,6 +1,5 @@
 @import 'config';
 @import 'tabs';
-@import 'responsive';
 
 
 * {
@@ -8,12 +7,11 @@
 }
 
 body {
-  font-family: Arial;
-  padding: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0 10px;
+  margin: 0;
   /* Background pattern from Subtle Patterns */
-  background: #F0EBE7;  
-  background-image: url('/dist/img/noisy-grid.png');
-  
+  background-image: url('/dist/img/noisy-grid.png');  
 }
 
 .header {
@@ -24,6 +22,7 @@ body {
         font-size: 50px;
         display: inline-block;
         letter-spacing: 2px;
+        margin: 10px 0;
 
         span {
             color: $secondary-color;
@@ -100,7 +99,7 @@ main:after {
 
         i {
             font-size: 2rem;
-            padding: 7px 13px;
+            padding: 7px 11px;
             
             &:hover {
                 color: $secondary-color;
@@ -110,3 +109,4 @@ main:after {
 }
 
 
+@import 'responsive';

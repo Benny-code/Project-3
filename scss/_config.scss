@@ -7,10 +7,10 @@ $secondary-color: #ff652f;
     color: white;
     text-transform: uppercase;
     padding: 0.8rem;
-    padding-left: 2rem;
+    padding-left: 1rem;
     border-radius: 7px; 
     background: #7EB037;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.5px;    
 }
 
 @mixin transition-ease {
@@ -21,6 +21,10 @@ $secondary-color: #ff652f;
     box-shadow: 0px 0px 5px 3px ($color);
 }
 
+@mixin progress-bar {
+    transition: all 1s ease-out;
+}
+
 @function set-text-color($color) {
     @if (lightness($color) > 40% ) {
         @return black;
@@ -28,4 +32,19 @@ $secondary-color: #ff652f;
     @else {
         @return white;
     }
+}
+
+@keyframes subheadings {
+    from {opacity: 0;}
+    to {opacity: 0.9}
+}
+
+@keyframes slide-in-left {
+    from {transform: translateX(-100%);}
+    to {transform: translateX(0);}
+}
+
+@keyframes slide-in-right {
+    from {transform: translateX(110%);}
+    to {transform: translateX(0);}
 }
