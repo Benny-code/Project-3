@@ -10,16 +10,32 @@
 body {
   font-family: Arial;
   padding: 10px;
-  background: #f1f1f1;
+  /* Background pattern from Subtle Patterns */
+  background: #F0EBE7;  
+  background-image: url('/dist/img/noisy-grid.png');
+  
 }
 
 .header {
-    padding: 30px;
     text-align: center;
-    background: white;
+    padding: 0;
 
     h1 {
         font-size: 50px;
+        display: inline-block;
+        letter-spacing: 2px;
+
+        span {
+            color: $secondary-color;
+            text-transform: uppercase;
+            font-style: italic;
+        }
+    }
+
+    h3 {
+        display: inline-block;
+        font-style: italic;
+        padding-left: 1rem;
     }
 }
  
@@ -35,8 +51,8 @@ body {
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
-        font-size: 1rem;    
-        @include subheading;
+        font-size: 1rem;  
+        letter-spacing: 1px;  
 
         &:hover {
             background-color: #ddd;
@@ -53,6 +69,9 @@ body {
     }
 }
 
+main {
+    padding-top: 1.5rem;
+}
 /* Clear floats after the columns */
 main:after {
     content: "";
@@ -61,18 +80,32 @@ main:after {
 }
 
 .footer {
-    padding: 20px;
-    background: #ddd;
-    margin-top: 20px;
+    color: white;
+    background-color: #333;
+    margin-top: 5rem;
+    overflow: hidden;
+    letter-spacing: 1px;  
   
     h2 {
         float: left; 
-        font-size: 1rem;    
-        @include subheading; 
+        font-size: 1rem;  
+        font-weight: 100; 
+        padding: 0 16px; 
     }
-  
-    .footer--right {
+
+    a {
+        color: set-text-color(#333);
+        text-decoration: none;
         float: right;
+
+        i {
+            font-size: 2rem;
+            padding: 7px 13px;
+            
+            &:hover {
+                color: $secondary-color;
+            }
+        }
     }
 }
 
