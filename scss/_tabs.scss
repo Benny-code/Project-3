@@ -4,20 +4,33 @@
     animation: subheadings 1s 0.2s ease-in-out;
     animation-fill-mode:both;
 }
+
+.sub__subheading {
+    font-size: 15px;
+    font-weight: 100;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    margin: 0 1rem;
+    background: grey;
+    letter-spacing: 1.5px;
+    border-radius: 7px;
+    animation: slide-in-right 1s 0.2s ease-out;
+    animation-fill-mode:both;
+}
+
 .content--padding {
-    padding: 0 1rem;
+    padding: 0 2rem;
 }
 
 .home {
     overflow: hidden;
+    margin-bottom: 2rem;
 
     .subheading {
-        width: 45%;
-        text-transform: none;
-
         span {
             color: $primary-color;
-            font-style: italic;
             text-transform: uppercase;
             font-weight: bold;
         }
@@ -41,7 +54,8 @@
 }
 
 .about {
-    overflow: hidden;  
+    overflow: hidden; 
+    margin-bottom: 2rem;
 
     h4 {
         margin-bottom: 5px;
@@ -180,6 +194,8 @@
 
 
 .portfolio {
+    margin-bottom: 2rem;
+
     h2 {
         width: 75%;
     }
@@ -233,9 +249,15 @@
 
 .contact {
     overflow: hidden;
+    margin-bottom: 2rem;
+
     h2 {
         width: 100%;
     }
+    .sub__subheading {
+        width: 55%;
+    }
+    
     .content--padding {
         padding-left: 2rem;
 

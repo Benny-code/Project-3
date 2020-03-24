@@ -67,8 +67,7 @@
   text-transform: uppercase;
   padding: 0.8rem;
   padding-left: 1rem;
-  border-radius: 7px;
-  background: #7EB037;
+  background: #3E79F9;
   letter-spacing: 1.5px;
   opacity: 0;
   -webkit-animation: subheadings 1s 0.2s ease-in-out;
@@ -77,22 +76,34 @@
           animation-fill-mode: both;
 }
 
+.sub__subheading {
+  font-size: 15px;
+  font-weight: 100;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  margin: 0 1rem;
+  background: grey;
+  letter-spacing: 1.5px;
+  border-radius: 7px;
+  -webkit-animation: slide-in-right 1s 0.2s ease-out;
+          animation: slide-in-right 1s 0.2s ease-out;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
 .content--padding {
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 
 .home {
   overflow: hidden;
-}
-
-.home .subheading {
-  width: 45%;
-  text-transform: none;
+  margin-bottom: 2rem;
 }
 
 .home .subheading span {
   color: #000;
-  font-style: italic;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -117,6 +128,7 @@
 
 .about {
   overflow: hidden;
+  margin-bottom: 2rem;
 }
 
 .about h4 {
@@ -240,6 +252,10 @@
   padding-bottom: 1.5rem;
 }
 
+.portfolio {
+  margin-bottom: 2rem;
+}
+
 .portfolio h2 {
   width: 75%;
 }
@@ -297,10 +313,15 @@
 
 .contact {
   overflow: hidden;
+  margin-bottom: 2rem;
 }
 
 .contact h2 {
   width: 100%;
+}
+
+.contact .sub__subheading {
+  width: 55%;
 }
 
 .contact .content--padding {
@@ -515,8 +536,7 @@ main:after {
     text-transform: uppercase;
     padding: 0.8rem;
     padding-left: 1rem;
-    border-radius: 7px;
-    background: #7EB037;
+    background: #3E79F9;
     letter-spacing: 1.5px;
     padding-left: 0;
     text-align: center;
