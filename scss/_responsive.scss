@@ -31,9 +31,7 @@
             margin-bottom: 10px;            
         }
     }
-   
-     
-       /* Style the top navigation bar */
+
     .topnav {
         overflow: none;
     
@@ -94,9 +92,9 @@
     margin-top: 10px;
   }
   .left.column {   
-      float: none;
       width: 100%;
       padding-right: 0;
+      padding-bottom: 2rem;
 
       .skills {   
           .skill__container {
@@ -108,7 +106,6 @@
   }
 
   .right.column {
-      float: none;
       width: 100%;
       padding-left: 0;
 
@@ -134,6 +131,24 @@
 .contact {
   .content--padding {
       padding-left: 0rem;
+  } 
+
+  .submit {
+      margin-left: 0;
+      padding-left: 0;
+
+      .sub__subheading {
+        width: 95%;
+    }
+
+      .container {
+        padding: 1rem;        
+      }
+
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      }
   }
 }
 }

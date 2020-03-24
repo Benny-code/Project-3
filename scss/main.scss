@@ -1,5 +1,5 @@
 @import 'config';
-@import 'tabs';
+
 
 
 * {
@@ -108,5 +108,5 @@ main:after {
     }
 }
 
-
+@import 'tabs';
 @import 'responsive';

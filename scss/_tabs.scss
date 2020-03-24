@@ -68,7 +68,8 @@
 
 
         .aboutme .content--padding {
-            margin: 1rem 1rem 2rem;
+            margin: 1rem 2rem 2rem;
+            padding: 10px;
             text-align: justify;
             border-left: 5px solid grey;
         }
@@ -76,7 +77,6 @@
 
         .skills {    
             .content--padding {
-
                 &:hover {
                     .skill__container {
 
@@ -179,7 +179,6 @@
         padding-left: 1rem;
 
         .content--padding {
-
             h4 {
                 border-left: 5px solid grey;
                 padding-left: 10px;
@@ -195,10 +194,7 @@
 
 .portfolio {
     margin-bottom: 2rem;
-
-    h2 {
-        width: 75%;
-    }
+    overflow: hidden;
 
     .projects {
         text-align: center;
@@ -254,9 +250,6 @@
     h2 {
         width: 100%;
     }
-    .sub__subheading {
-        width: 55%;
-    }
     
     .content--padding {
         padding-left: 2rem;
@@ -298,3 +291,60 @@
 
 }
 
+.submit {
+    margin-top: 1rem;
+
+    .sub__subheading {
+        width: 55%;
+    }
+
+    input[type=text], textarea {
+        width: 100%;
+        padding: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+      }
+      
+      label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+      }
+      
+      input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+
+        &:hover {
+            background-color: #45a049;
+          }
+      }
+            
+      .container {
+        border-radius: 5px;
+        padding: 1rem 4rem 2rem;        
+      }
+      
+      .col-25 {
+        float: left;
+        width: 15%;
+        margin-top: 6px;
+      }
+      
+      .col-75 {
+        float: left;
+        width: 85%;
+        margin-top: 6px;
+      }
+      
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+}
