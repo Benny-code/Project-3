@@ -141,7 +141,7 @@ main:after {
 .footer {
   color: white;
   background-color: #333;
-  margin-top: 5rem;
+  margin-top: 2rem;
   overflow: hidden;
   letter-spacing: 1px;
 }
@@ -210,12 +210,6 @@ main:after {
   margin-bottom: 2rem;
 }
 
-.home .subheading span {
-  color: #000;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
 .home .left__img {
   float: left;
   width: 50%;
@@ -226,8 +220,8 @@ main:after {
 .home .right__img {
   float: left;
   width: 50%;
-  -webkit-animation: slide-in-right 1.5s ease-in;
-          animation: slide-in-right 1.5s ease-in;
+  -webkit-animation: slide-in-right 1s ease-in-out;
+          animation: slide-in-right 1s ease-in-out;
 }
 
 .home img {
@@ -419,7 +413,7 @@ main:after {
 
 .contact {
   overflow: hidden;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .contact h2 {
@@ -427,7 +421,9 @@ main:after {
 }
 
 .contact .content--padding {
-  padding-left: 2rem;
+  padding: 1rem;
+  float: left;
+  width: 45%;
 }
 
 .contact .content--padding div:nth-child(1) {
@@ -465,7 +461,7 @@ main:after {
 
 .contact .content--padding i {
   font-size: 1.5rem;
-  padding: 1rem;
+  padding: 0.5rem;
   color: blue;
 }
 
@@ -475,15 +471,18 @@ main:after {
   top: -3px;
 }
 
-.submit {
+.contact .submit {
   margin-top: 1rem;
-}
-
-.submit .sub__subheading {
+  float: left;
   width: 55%;
 }
 
-.submit input[type=text], .submit textarea {
+.contact .submit .sub__subheading {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact .submit input[type=text], .contact .submit textarea {
   width: 100%;
   padding: 1rem;
   border: 1px solid #ccc;
@@ -491,12 +490,12 @@ main:after {
   resize: vertical;
 }
 
-.submit label {
-  padding: 12px 12px 12px 0;
+.contact .submit label {
+  padding: 12px 5px 0;
   display: inline-block;
 }
 
-.submit input[type=submit] {
+.contact .submit input[type=submit] {
   background-color: #4CAF50;
   color: white;
   padding: 12px 20px;
@@ -506,28 +505,29 @@ main:after {
   float: right;
 }
 
-.submit input[type=submit]:hover {
+.contact .submit input[type=submit]:hover {
   background-color: #45a049;
 }
 
-.submit .container {
+.contact .submit .container {
   border-radius: 5px;
-  padding: 1rem 4rem 2rem;
+  padding: 1rem;
 }
 
-.submit .col-25 {
+.contact .submit .col-25 {
   float: left;
-  width: 15%;
+  width: 20%;
+  margin-top: 6px;
+  margin-right: 2px;
+}
+
+.contact .submit .col-75 {
+  float: right;
+  width: 75%;
   margin-top: 6px;
 }
 
-.submit .col-75 {
-  float: left;
-  width: 85%;
-  margin-top: 6px;
-}
-
-.submit .row:after {
+.contact .submit .row:after {
   content: "";
   display: table;
   clear: both;
@@ -541,6 +541,25 @@ main:after {
   }
   .footer {
     margin-top: 1.5rem;
+  }
+  .contact .content--padding {
+    padding-left: 0rem;
+    width: 100%;
+  }
+  .contact .submit {
+    margin-left: 0;
+    padding-left: 0;
+    width: 100%;
+  }
+  .contact .submit .sub__subheading {
+    width: 95%;
+  }
+  .contact .submit .container {
+    padding: 1rem;
+  }
+  .contact .submit .col-25, .contact .submit .col-75, .contact .submit input[type=submit] {
+    width: 100%;
+    margin-top: 0;
   }
 }
 
@@ -635,23 +654,6 @@ main:after {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
     grid-gap: 0rem;
-  }
-  .contact .content--padding {
-    padding-left: 0rem;
-  }
-  .contact .submit {
-    margin-left: 0;
-    padding-left: 0;
-  }
-  .contact .submit .sub__subheading {
-    width: 95%;
-  }
-  .contact .submit .container {
-    padding: 1rem;
-  }
-  .contact .submit .col-25, .contact .submit .col-75, .contact .submit input[type=submit] {
-    width: 100%;
-    margin-top: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

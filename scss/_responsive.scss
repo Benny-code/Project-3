@@ -9,6 +9,32 @@
     .footer {
         margin-top: 1.5rem;     
     }
+
+    .contact {
+        .content--padding {
+            padding-left: 0rem;
+            width: 100%;
+        } 
+      
+        .submit {
+            margin-left: 0;
+            padding-left: 0;
+            width: 100%;
+      
+            .sub__subheading {
+              width: 95%;
+          }
+      
+            .container {
+              padding: 1rem;        
+            }
+      
+              .col-25, .col-75, input[type=submit] {
+                  width: 100%;
+                  margin-top: 0;
+              }
+          }
+        }
 }
 
  
@@ -128,27 +154,5 @@
 }
 
 
-.contact {
-  .content--padding {
-      padding-left: 0rem;
-  } 
 
-  .submit {
-      margin-left: 0;
-      padding-left: 0;
-
-      .sub__subheading {
-        width: 95%;
-    }
-
-      .container {
-        padding: 1rem;        
-      }
-
-    .col-25, .col-75, input[type=submit] {
-        width: 100%;
-        margin-top: 0;
-      }
-  }
-}
 }
