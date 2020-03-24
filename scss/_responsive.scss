@@ -9,6 +9,37 @@
     .footer {
         margin-top: 1.5rem;     
     }
+
+    .contact {
+        .content--padding {
+            padding-left: 1rem;
+            width: 100%;
+        } 
+      
+        .submit {
+            margin-left: 0;
+            padding-left: 0;
+            width: 100%;
+      
+            .sub__subheading {
+              width: 95%;
+          }
+      
+            .container {
+              padding: 1rem;        
+            }
+      
+              .col-25, .col-75 {
+                  width: 100%;
+                  margin-top: 0;
+              }
+
+              input[type=submit] {
+                width: 100%;
+                margin-top: 5px;
+              }
+          }
+        }
 }
 
  
@@ -25,15 +56,12 @@
     
         h3 {
             display: block;
-            padding: 0;
+            padding: 10px;
             margin: 0;  
             margin-top: -10px;          
-            margin-bottom: 10px;            
         }
     }
-   
-     
-       /* Style the top navigation bar */
+
     .topnav {
         overflow: none;
     
@@ -94,9 +122,9 @@
     margin-top: 10px;
   }
   .left.column {   
-      float: none;
       width: 100%;
       padding-right: 0;
+      padding-bottom: 2rem;
 
       .skills {   
           .skill__container {
@@ -108,7 +136,6 @@
   }
 
   .right.column {
-      float: none;
       width: 100%;
       padding-left: 0;
 
@@ -131,9 +158,5 @@
 }
 
 
-.contact {
-  .content--padding {
-      padding-left: 0rem;
-  }
-}
+
 }

@@ -1,5 +1,5 @@
 $primary-color: #000;
-$secondary-color: #ff652f;
+$secondary-color: #19A214;
 
 @mixin subheading {
     font-size: 20px;
@@ -8,8 +8,7 @@ $secondary-color: #ff652f;
     text-transform: uppercase;
     padding: 0.8rem;
     padding-left: 1rem;
-    border-radius: 7px; 
-    background: #7EB037;
+    background: $secondary-color;
     letter-spacing: 1.5px;    
 }
 
@@ -27,7 +26,7 @@ $secondary-color: #ff652f;
 
 @function set-text-color($color) {
     @if (lightness($color) > 40% ) {
-        @return black;
+        @return #333;
     } 
     @else {
         @return white;

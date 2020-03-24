@@ -4,35 +4,53 @@
     animation: subheadings 1s 0.2s ease-in-out;
     animation-fill-mode:both;
 }
+
+.sub__subheading {
+    font-size: 15px;
+    font-weight: 100;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    margin: 0 1rem;
+    background: grey;
+    letter-spacing: 1.5px;
+    border-radius: 7px;
+    animation: slide-in-right 1s 0.2s ease-out;
+    animation-fill-mode:both;
+}
+
 .content--padding {
-    padding: 0 1rem;
+    padding: 0 2rem;
 }
 
 .home {
     overflow: hidden;
-
-    .subheading {
-        width: 45%;
-        text-transform: none;
-
-        span {
-            color: $primary-color;
-            font-style: italic;
-            text-transform: uppercase;
-            font-weight: bold;
-        }
-    }
+    margin-bottom: 2rem;
 
     .left__img {   
         float: left;
         width: 50%;
         animation: slide-in-left 1s ease-in-out;
+        
+
+        h2 {
+            position: absolute;
+            color: white;
+            text-shadow: 0 0 2px black;
+        }
     }
 
     .right__img {
         float: left;
         width: 50%;
-        animation: slide-in-right 1.5s ease-in;
+        animation: slide-in-right 1s ease-in-out;
+
+        h2 {
+            position: absolute;
+            color: white;
+            text-shadow: 0 0 2px black;
+        }
     }
     
     img {
@@ -41,7 +59,8 @@
 }
 
 .about {
-    overflow: hidden;  
+    overflow: hidden; 
+    margin-bottom: 2rem;
 
     h4 {
         margin-bottom: 5px;
@@ -54,7 +73,8 @@
 
 
         .aboutme .content--padding {
-            margin: 1rem 1rem 2rem;
+            margin: 1rem 2rem 2rem;
+            padding: 10px;
             text-align: justify;
             border-left: 5px solid grey;
         }
@@ -62,7 +82,6 @@
 
         .skills {    
             .content--padding {
-
                 &:hover {
                     .skill__container {
 
@@ -165,7 +184,6 @@
         padding-left: 1rem;
 
         .content--padding {
-
             h4 {
                 border-left: 5px solid grey;
                 padding-left: 10px;
@@ -180,9 +198,8 @@
 
 
 .portfolio {
-    h2 {
-        width: 75%;
-    }
+    margin-bottom: 2rem;
+    overflow: hidden;
 
     .projects {
         text-align: center;
@@ -233,26 +250,31 @@
 
 .contact {
     overflow: hidden;
+    margin-bottom: 1rem;
+
     h2 {
         width: 100%;
     }
+    
     .content--padding {
-        padding-left: 2rem;
+        padding: 1rem;
+        float: left;
+        width: 45%;        
 
         div:nth-child(1) {
-            animation: slide-in-right 1s 0.7s ease-out;
+            animation: slide-in-left 1s 0.7s ease-out;
             animation-fill-mode: both;
         }
         div:nth-child(2) {
-            animation: slide-in-right 1s 0.8s ease-out;
+            animation: slide-in-left 1s 0.9s ease-out;
             animation-fill-mode: both;
         }
         div:nth-child(3) {
-            animation: slide-in-right 1s 0.9s ease-out;
+            animation: slide-in-left 1s 1.1s ease-out;
             animation-fill-mode: both;
         }
         div:nth-child(4) {
-            animation: slide-in-right 1s 1s ease-out;
+            animation: slide-in-left 1s 1.3s ease-out;
             animation-fill-mode: both;
         }        
 
@@ -262,7 +284,7 @@
 
         i {
             font-size: 1.5rem;
-            padding: 1rem;
+            padding: 0.5rem;
             color: blue;
             
         }
@@ -274,5 +296,66 @@
         }
     }
 
+    .submit {
+        margin-top: 1rem;
+        float: left;
+        width: 55%;
+    
+        .sub__subheading {
+            width: 100%;
+            margin: 0 auto;
+        }
+    
+        input[type=text], textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+          }
+          
+          label {
+            padding: 12px 5px 0;
+            display: inline-block;
+          }
+          
+          input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+    
+            &:hover {
+                background-color: #45a049;
+              }
+          }
+                
+          .container {
+            border-radius: 5px;
+            padding: 1rem;        
+          }
+          
+          .col-25 {
+            float: left;
+            width: 20%;
+            margin-top: 6px;
+            margin-right: 2px;
+          }
+          
+          .col-75 {
+            float: right;
+            width: 75%;
+            margin-top: 6px;
+          }
+          
+          .row:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+    }
 }
 
