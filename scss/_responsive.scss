@@ -1,0 +1,139 @@
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .portfolio {    
+    .projects {        
+        grid-template-columns: repeat(2, 1fr);
+        }            
+    }    
+
+    .footer {
+        margin-top: 1.5rem;     
+    }
+}
+
+ 
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    body {
+      padding: 0 5px;     
+    }
+    
+    .header {    
+        h1 {           
+            margin: 0px;
+        }
+    
+        h3 {
+            display: block;
+            padding: 0;
+            margin: 0;  
+            margin-top: -10px;          
+            margin-bottom: 10px;            
+        }
+    }
+   
+     
+       /* Style the top navigation bar */
+    .topnav {
+        overflow: none;
+    
+        a {
+            float: left;
+            width: 50%;
+            display: block; 
+            padding: 10px 0; 
+        }  
+
+        .nav__link--right {
+            float: left;
+        }         
+    }
+    
+    main {
+        padding-top: 5px;
+    }
+        
+    .footer {
+        margin-top: 1rem; 
+      
+        h2 {
+            padding: 0 10px; 
+        }       
+    }
+
+ .subheading {
+  @include subheading;
+  padding-left: 0;
+  text-align: center;
+}
+
+.home {
+  .subheading {
+      width: 100%;
+  }
+
+  .left__img {   
+      float: left;
+      width: 50%;
+      animation: slide-in-left 1s ease-in-out;
+  }
+
+  .right__img {
+      float: left;
+      width: 50%;
+      animation: slide-in-right 1.5s ease-in;
+  }
+  
+  img {
+      width: 100%;
+  }
+}
+
+.about {
+  h4 {
+    margin-top: 10px;
+  }
+  .left.column {   
+      float: none;
+      width: 100%;
+      padding-right: 0;
+
+      .skills {   
+          .skill__container {
+              .skill {
+                  opacity:1;
+              }
+          }
+      }
+  }
+
+  .right.column {
+      float: none;
+      width: 100%;
+      padding-left: 0;
+
+      div {
+              padding-bottom: 0rem;
+          }
+    }
+}
+
+
+.portfolio {
+  h2 {
+      width: 100%;
+  }
+
+  .projects {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 0rem;            
+  }    
+}
+
+
+.contact {
+  .content--padding {
+      padding-left: 0rem;
+  }
+}
+}
